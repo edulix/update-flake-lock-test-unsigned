@@ -15,7 +15,7 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Update flake.lock
-        uses: edulix/update-flake-lock@v10
+        uses: edulix/update-flake-lock@main
         with:
           pr-title: "Update flake.lock"
           pr-labels: dependencies
