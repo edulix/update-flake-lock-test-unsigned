@@ -22,3 +22,11 @@ jobs:
           sign-commits: true
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          pr-body: |
+            Automated changes by the [update-flake-lock](https://github.com/edulix/update-flake-lock) GitHub Action.
+            ```
+            {{ env.GIT_COMMIT_MESSAGE }}
+            ```
+            
+            With a custom PR body, yay!
+
